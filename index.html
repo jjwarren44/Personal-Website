@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+
+    <!-- CSS and Favicon -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/jacob-profile.png">
+
+    <title>Jacob Warren</title>
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/jacob-profile.png" id="jacob-profile" alt="Jacob Profile">
+    </div>
+
+    <div id="intro">
+        <h1>Hey, I'm Jacob</h1>
+        <p>I'm a computer science student who loves to write code and has fun trying to design.</p>
+        <p>Take a look around to see some of the things that I have done.</p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects">
+        <h1 class="section-header">Projects</h1>
+        <div id="pacman" class="hidden">
+            <!-- Pac-Man -->
+            <img src="images/pacman.png" class="project-art" alt="Pac-Man AI">
+            <h3>Pac-Man AI</h3>
+            <p>Using Python and the libary PyGame, I recreated the game of Pac-Man. After I had the game created and functional, I hooked up the controls of Pac-Man to a neural network that used the NeuroEvolution of Augmenting Topologies (NEAT) algorithm.
+            </p>
+            <p>This was a great learning experience that required both pathfinding algorithms for the ghosts' movement and machine learning concepts and methodologies to implement the neural network.</p>
+            <div class="code-logos">
+                <a href="https://github.com/jjwarren44/PacMan-AI" target="_blank"><img src="images/github.png" alt="View on GitHub"></a>
+            </div>
+        </div>
+        <div id="flappybird" class="hidden">
+            <!-- Flappy Bird in JS-->
+            <img src="images/flappybird.gif" class="project-art" alt="Flappy Bird in JavaScript">
+            <h3>Flappy Bird in JavaScript</h3>
+            <p>Using vanilla JavaScript and a little bit of HTML, I recreated the game of Flappy Bird. The game keeps track of your current score as well as high score for your current session.</p>
+            <p>This was a fun project that gave me some good exposure to JavaScript and its potential for interactivity in other applications.</p>
+            <div class="code-logos">
+                <a href="https://github.com/jjwarren44/Flappy-Bird-JS" target="_blank"><img src="images/github.png" alt="View on GitHub"></a>
+                <a href="https://jsfiddle.net/jacobbwarren/n4hdqcps/" target="_blank"><img src="images/jsfiddle.png" alt="View on JSFiddle"></a>
+            </div>
+        </div>
+        <div id="music-store" class="hidden">
+            <!-- Music Store -->
+            <img src="images/music-store.png" class="project-art" alt="Music Store/Database">
+            <h3>Music Store/Database</h3>
+            <p>In this project, I created a website that allowed users to browse and "purchase" music using a database found online of a music store (songs, employees, customers. and others). There was also an employee login so that they could see the customers
+                they have sold to and metrics pertaining to their performance.</p>
+            <p>I learned a lot about interacting with a database via SQL in this project as well as how a database should be structured.</p>
+            <div class="code-logos">
+                <a href="https://github.com/jjwarren44/Music-Store" target="_blank"><img src="images/github.png" alt="View on GitHub"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="education">
+        <h1 class="section-header">Education</h1>
+        <br>
+        <div id="wmu" class="hidden">
+            <img src="images/wmu.png" alt="Western Michigan University">
+            <h3>Western Michigan University</h3>
+            <p>BS in Computer Science<br>Graduating in Decemeber 2020</p>
+        </div>
+        <div id="kcc" class="hidden">
+            <img src="images/kcc.png" alt="Kellogg Community College">
+            <h3>Kellogg Community College</h3>
+            <p>Associate of Arts, Cum Laude<br>Graduated in May 2017</p>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL EXPERIENCE-->
+    <div id="professional">
+        <h1 class="section-header">Professional Experience</h1>
+        <div id="all-jobs" class="hidden">
+            <img src="images/tonythetiger.png" alt="Tony the Tiger">
+            <h3>Kellogg Corporation</h3>
+            <br>
+            <h5 class="title"><span>Business Solutions</span></h5>
+            <p>Intern</p>
+            <p>Jan. 2019 - Current</p>
+            <p>Currently, I am interning within Kellogg's Category Management organization. Our main objective is to increase our products' performance with data-driven in-store placement.</p>
+            <p>How I contribute to our objective is by retreiving and harmoninzing disparate data from vendors such as Nielsen and IRI, as well as our internal shipment data. I do most of the data retreival through SQL queries and harmonize using Python.</p>
+            <p>After gathering all of the data, I begin building out interactive and exploratory reports within Tableau--a data-visualization software--that will allow our people in the field, as well as upper-management, gain insights into the marketplace.</p>
+            <br>
+            <h5 class="title"><span>Global Brand Protection</span></h5>
+            <p>Student Support</p>
+            <p>Oct. 2016 - Dec. 2018</p>
+            <p>This is where my professional career really began (after some odd-jobs and retail). This role was very interesting and was a global operation, so I even learned some geography along the way.</p>
+            <p>My manager and I were tasked with ensuring that all of our customers were adhering to our purchasing agreement and making sure that nothing would be done to potentially harm our brand equity.</p>
+            <p>That's about as much as I can give, but nonetheless very interesting start to my career.</p>
+            <br>
+            <img src="images/wesustain.png" alt="WeSustain WMU Office for Sustainability">
+            <h3>Western Michigan University's Office for Sustainability</h3>
+            <br>
+            <h5 class="title"><span>Waste Reduction</span></h5>
+            <p>Student Researcher</p>
+            <p>Jan. 2018 - Sept. 2018</p>
+            <p>Where I attend University, we have an Office for Sustainability that I spent about 9 months at.</p>
+            <p>I spent most of my time researching ways to reduce waste on campus, as well as performing cost-analysis on potential initiatives to ensure they were economically viable.</p>
+            <p>We also helped out around campus with various events to foster a sustainable community on campus.</p>
+        </div>
+    </div>
+
+    <!-- WRAP UP AND CONTACT INFO -->
+
+    <div id="contact">
+        <h1 class="section-header">Contact Me</h1>
+        <p>Thanks for stopping by. Feel free to reach out to me on any of the links below!</p>
+        <div class="row hidden">
+            <div class="col">
+                <a href="mailto:jjwarren44@gmail.com" target="_blank"><img src="images/gmail.png" alt="Gmail"></a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/jacob-warren-186252127/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="col">
+                <a href="https://github.com/jjwarren44" target="_blank"><img src="images/github_shadow.png" alt="Github"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>

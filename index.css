@@ -1,0 +1,196 @@
+p {
+    color: rgb(50, 50, 50);
+}
+
+@media only screen and (min-width: 600px) {
+    p {
+        font-size: 18pt;
+    }
+}
+
+#header {
+    background-image: url("images/profile-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1099px) {
+    #header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+#intro {
+    text-align: center;
+    margin-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 3vh;
+}
+
+#projects,
+#education,
+#professional,
+#contact {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: -1;
+}
+
+.section-header {
+    text-align: center;
+    position: sticky;
+    top: 0vh;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+#pacman,
+#flappybird,
+#music-store {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+}
+
+@media only screen and (max-width: 1099px) {
+    .project-art {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .project-art {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    .code-logos img {
+        text-align: center;
+        width: 15%;
+        margin: 5%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .code-logos img {
+        text-align: center;
+        width: 10%;
+        margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    #education img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #education img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+}
+
+#kcc {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+}
+
+#all-jobs {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+}
+
+#professional img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1099px) {
+    #professional img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #professional img {
+        width: 50%;
+    }
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .title {
+        font-size: 24pt;
+    }
+}
+
+.title span {
+    background: white;
+    padding: 0 10px;
+}
+
+#contact img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+/* UTILITY */
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s ease;
+}
+
+0
