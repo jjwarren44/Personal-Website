@@ -7,10 +7,6 @@ p {
     font-family: 'Libre Franklin', Sans-Serif;
 }
 
-p {
-    color: rgb(50, 50, 50);
-}
-
 @media only screen and (min-width: 600px) {
     p {
         font-size: 18pt;
@@ -22,37 +18,18 @@ p {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    height: 100vh;
 }
 
-@media only screen and (max-width: 1099px) {
-    #header img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-    #header img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-}
-
-#intro {
+#header-text {
     text-align: center;
-    margin-top: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    margin-bottom: 3vh;
+    color: white;
 }
 
-#intro span {
-    color: black;
+#header h1 {
+    line-height: 50vh;
 }
 
 #projects,
@@ -60,8 +37,6 @@ p {
 #professional,
 #contact {
     text-align: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
     z-index: -1;
 }
 
@@ -78,7 +53,7 @@ p {
 
 #pacman,
 #flappybird,
-#music-store {
+#moodfm {
     border-style: solid;
     border-color: black;
     border-width: 0px 0px 1px 0px;

@@ -26,3 +26,30 @@
     init();
     checkPosition();
 })();
+
+// Function to fade out header when scrolling down
+(function() {
+    var header;
+    var headerText;
+    var windowHeight;
+
+    function init() {
+        header = document.querySelector('#header');
+        headerText = document.querySelector('#header-text');
+        windowHeight = window.innerHeight;
+    }
+
+    function checkPosition() {
+        var positionFromBottom = header.getBoundingClientRect().bottom;
+
+        // Change opacity of background
+        var opacityVal = positionFromBottom / windowHeight;
+        header.style.opacity = opacityVal;
+    }
+
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+
+    init();
+    checkPosition();
+})();
